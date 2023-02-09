@@ -311,7 +311,7 @@ class Chatgpt(Frame):
             response = requests.post("https://bilalsardar-like-chatgpt-clone.hf.space/run/predict", json={
             "data": [
                 "I am happy today beacuse I saw my mom in my dream",
-                "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",
+                "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",
                 "I want you to write a short complete sentences story on given prompt",
             ]}).json()
             data = response["data"]
