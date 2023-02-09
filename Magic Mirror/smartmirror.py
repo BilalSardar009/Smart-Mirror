@@ -386,7 +386,7 @@ class FullscreenWindow:
         self.weather.pack(side=LEFT, anchor=N, padx=50, pady=60)
         # news
         self.news = News(self.bottomFrame)
-        self.news.pack(side=LEFT, anchor=S, padx=50, pady=60)
+        self.news.pack(side=LEFT, anchor=S, padx=40, pady=50)
         
         #chatgpt
         self.chat = Chatgpt(self.bottomFrame)
@@ -396,8 +396,8 @@ class FullscreenWindow:
         self.emotion = Emotion(self.topFrame)
         self.emotion.pack(side=RIGHT, anchor=N, padx=30, pady=30)
         # calender - removing for now
-        # self.calender = Calendar(self.bottomFrame)
-        # self.calender.pack(side = RIGHT, anchor=S, padx=100, pady=60)
+        # self.calender = Calendar(self.topFrame)
+        # self.calender.pack(side = LEFT, anchor=S, padx=40, pady=30)
 
     def toggle_fullscreen(self, event=None):
         self.state = not self.state  # Just toggling the boolean
